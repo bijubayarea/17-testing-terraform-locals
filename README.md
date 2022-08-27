@@ -1,4 +1,3 @@
-# Learn Terraform locals
 # testing-terraform-locals
 
 Terraform locals allow you to simplify your Terraform configuration and avoid
