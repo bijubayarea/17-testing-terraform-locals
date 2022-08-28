@@ -7,4 +7,4 @@ tutorial](https://learn.hashicorp.com/tutorials/terraform/locals?in=terraform/co
 
 USAGE : terraform apply
 
-        terraform apply -var "environment=production"
+USAGE : terraform apply -var "environment=production"
