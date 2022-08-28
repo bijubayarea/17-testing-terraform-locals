@@ -8,7 +8,7 @@ module "elb_http" {
   version = "2.4.0"
 
   # Ensure load balancer name is unique
-  name = "lb-${random_string.lb_id.result}-${var.resource_tags["project"]}-${var.resource_tags["environment"]}"
+  name = "lb-${random_string.lb_id.result}-${local.name_suffix}"
 
   internal = false
 
@@ -33,5 +33,5 @@ module "elb_http" {
     timeout             = 5
   }
 
-  tags = var.resource_tags
+  tags = local.tags
 }

@@ -4,7 +4,7 @@ module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
   version = "2.64.0"
 
-  name = "vpc-${var.resource_tags["project"]}-${var.resource_tags["environment"]}"
+  name = "vpc-${local.name_suffix}"
   cidr = var.vpc_cidr_block
 
   azs             = data.aws_availability_zones.available.names
@@ -14,5 +14,5 @@ module "vpc" {
   enable_nat_gateway = true
   enable_vpn_gateway = var.enable_vpn_gateway
 
-  tags = var.resource_tags
+  tags = local.tags
 }

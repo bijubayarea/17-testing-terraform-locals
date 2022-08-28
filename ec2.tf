@@ -31,5 +31,5 @@ resource "aws_instance" "app" {
     echo "<html><body><div>Hello, world!</div></body></html>" > /var/www/html/index.html
     EOF
 
-  tags = var.resource_tags
+  tags = local.tags
 }
