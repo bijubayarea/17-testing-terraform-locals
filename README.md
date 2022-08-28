@@ -6,4 +6,5 @@ using meaningful names rather than hard-coding values. Follow along with [this
 tutorial](https://learn.hashicorp.com/tutorials/terraform/locals?in=terraform/configuration-language) on HashiCorp Learn.
 
 USAGE : terraform apply
+
         terraform apply -var "environment=production"
